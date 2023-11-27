@@ -1,0 +1,140 @@
+
+  ion-content {
+    --background: #e9eaec;; 
+  }
+  #car-logo{
+    color: #ffffff;
+    margin-left: 85px;
+  }
+  .main-logo{
+  margin-top: 20px;
+  margin-left: 600px;
+  font-size: 4em;
+  }
+  .login-logo{
+    color: black;
+    margin-left: 150px;
+    font-size: 1em;
+  }
+  ion-input{
+    --box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+ ion-input::placeholder{
+    color: #004d40;
+}
+.input-item{
+    border:0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 35px;
+  }
+  ion-button{
+    --background: #004d40;
+  }
+  ion-button:hover{
+    --background: #000000;
+  }
+  ion-card{
+    background-color: #ffffff;
+    height: 40px;
+    justify-content: center;
+  }
+  ion-label,ion-icon {
+    color: #004d40;
+    text-align: center;
+    font-size: large;
+    margin-left: 17px;
+    margin-top: 10px
+
+  }
+  ion-label{
+    margin-right: 40px;
+    color: grey;
+  }
+  ion-input{
+    color: #000;
+    text-align: start;
+    margin-left: 20px;
+    font-size: large;
+  }
+
+  b{
+    font-size: medium;
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  ion-header {
+    background-color: #004d40;
+    width: full;
+    height: 200px;
+    border-radius: 25px;
+  }
+  .social-media-container {
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  .social-media-icon {
+    font-size: 32px;
+    margin: 0 8px;
+    color: #3b5998; /* Set the color for Facebook icon */
+  }
+  ul{
+    margin-right: 40px;
+  }
+  li{
+    display: inline;
+    margin-left: 0;
+  }
+  .register-now {
+    text-align: center;
+    color: grey; /* Adjust the color to your preference */
+  }
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: #004d40;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: #004d40;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #004d40;
+      background-color: #fcfcfa;
+    }
+  }
+  .lable{
+    color: grey;
+  }
+  .item-background-color{
+    --ion-item-background:#ffffff;
+    padding-bottom: 20px;
+  }

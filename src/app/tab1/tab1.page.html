@@ -1,0 +1,42 @@
+<ion-content>
+    <ion-header>
+      <ion-icon class="main-logo" id="car-logo" name="car-outline"></ion-icon>
+      <b>Car Rental</b>
+    </ion-header>
+    <h2><b class="login-logo">Login</b></h2>
+    <div class="login-page" >
+      <ion-item class="item-background-color">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label class="lable">Email</ion-label>
+        <ion-input [(ngModel)]="username" name="username" required></ion-input>
+      </ion-item>
+
+      <ion-item class="item-background-color">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-label class="lable">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>>
+      </ion-item>
+    </div>
+  
+    <div style="margin-bottom: 20px;">
+    <input class="custom-checkbox" type="checkbox"/>
+    <ion-label class="remember-label">Remember Password</ion-label>
+    <ion-label class="forget-label" slot="end">Forget Password</ion-label>
+  </div>
+<ion-button expand="full" (click)="login()">Login</ion-button>
+
+<hr class="hr-text" data-content="OR">
+
+  <div class="social-media-container">
+    <ion-label class="social-media-label" color="medium">Continue with Social Media</ion-label>
+    <ul>
+    <li><ion-icon name="logo-facebook" class="social-media-icon" style="color: #4267B2;" (click)="facebook()"></ion-icon></li>
+    <li> <ion-icon name="logo-google" class="social-media-icon" style="color: #DB4437;"></ion-icon><a href="https://www.gmail.com/"></a></li>
+    <li><ion-icon name="logo-twitter" class="social-media-icon" style="color: #1DA1F2;"></ion-icon><a href="https://www.twitter.com"></a></li>
+  </ul>
+  </div>
+  <div class="register-now">
+    <p>Don't have an account? <a style="color:#004d40;" routerLink="./">Register now</a></p>
+  </div>
+</ion-content>
+

@@ -1,0 +1,65 @@
+
+ion-content {
+    --background: #ffffff; 
+  }
+ion-item{
+    background-color: white;
+    color: white;
+}
+#car-logo{
+    color: #ffffff;
+    margin-left: 85px;
+  }
+  .main-logo{
+  margin-top: 20px;
+  margin-left: 600px;
+  font-size: 4em;
+  }
+  .login-logo{
+    color: black;
+    margin-left: 140px;
+  }
+  ion-header {
+    background-color: #004d40;
+    width: full;
+    height: 150px;
+    border-radius: 25px;
+  }
+  .otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ion-item.otp-input-item {
+    --background: white; 
+  }
+  
+  .otp-input {
+    
+    max-width: 50px; 
+  }
+  .inline-box{
+    display: inline;
+  }
+  ion-input{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    margin:10px;
+    border: 2px solid black;
+   
+    }
+    .otp-box{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    ion-button{
+        --background: #004d40;
+        margin-top:30px;
+      }
+      p{
+        color: black;
+        text-align: center;
+        margin: 5px 0 5px 0;
+      }

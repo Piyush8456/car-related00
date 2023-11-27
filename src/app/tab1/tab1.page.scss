@@ -1,0 +1,157 @@
+
+  ion-content {
+    --background: #e9eaec; /* Set the background color to white */
+  }
+
+  .main-logo{
+  margin-top: 20px;
+  margin-left: 600px;
+  font-size: 4em;
+  color: #ffffff;
+  margin-left: 120px;
+  }
+  .login-logo{
+    color: black;
+    margin-left: 160px;
+  }
+  ion-checkbox {
+    border: 1px solid #1b5320;
+    --border-radius : 0;
+    margin-right: 50px;
+    font-size: 1em;
+  }
+  .divider {
+    margin: 16px 0;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .social-media-container {
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .social-media-label {
+    margin-bottom: 16px;
+  }
+  
+  .social-media-icon {
+    font-size: 32px;
+    margin: 0 8px;
+    color: #3b5998; /* Set the color for Facebook icon */
+  }
+  ul{
+    margin-right: 40px;
+  }
+  li{
+    display: inline;
+    margin-left: 0;
+  }
+  ion-button{
+    --background: #004d40;
+  }
+  .input-item{
+    border:0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 0.3px 3px 1px black;
+    // width: 340px;
+    height: 40px;
+  }
+  input[type=checkbox] {
+    accent-color: rgb(255, 255, 255);
+  }
+  ion-card{
+    background-color: #ffffff;
+    height: 40px;
+      padding-bottom: 10PX;
+      justify-content: center;
+  }
+  ion-label,ion-icon {
+    color: #004d40;
+    text-align: center;
+    font-size: large;
+    margin-left: 17px;
+
+  }
+
+  ion-input{
+    color: #000;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-left: 20px;
+    font-size: large;
+    padding-bottom: 100px;
+  }
+  ion-header {
+    background-color: #004d40;
+    width: full;
+    height: 190px;
+    border-radius: 25px;
+  }
+  .custom-checkbox {
+    --background-color:var(--background)
+    transform: scale(2); 
+    border: 2px;
+    margin-left: 30px;
+    display: inline;
+  }
+  .remember-label{
+    font-size: medium; 
+    color: #004d40;
+  }
+  .forget-label{
+  margin-left: 17px;
+  font-size: medium;
+  color: red;
+  }
+ 
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: #004d40;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: #004d40;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #004d40;
+      background-color: #fcfcfa;
+    }
+  }
+  .register-now {
+    text-align: center;
+    color: grey; /* Adjust the color to your preference */
+  }
+  .item-background-color{
+    --ion-item-background:#ffffff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.lable{
+  color: grey;
+}
