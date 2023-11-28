@@ -1,14 +1,82 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>carOnRente</ion-title>
+    <ion-title><strong>Own a car without acutually buying it, so book now...</strong></ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">carOnRente</ion-title>
-    </ion-toolbar>
+  <ion-header collapse="condense"> 
+      <h3 style="color:white;">Own a car without acutually buying it, so book now...</h3>
+      <span style="margin-left: 20px;">select pick up location</span>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="option1" selected>Option 1</ion-select-option>
+            <ion-select-option value="option2">Option 2</ion-select-option>
+            <ion-select-option value="option3">Option 3</ion-select-option>
+          </ion-select>
+          <span style="margin-left: 20px;">Start trip</span>
+          <ion-list class="date-picker">
+            <ion-item>
+              <ion-label>Select Date</ion-label>
+              <ion-note slot="end" id="open-popover1">{{dateExample | date}}</ion-note>
+            </ion-item>
+            <ion-popover trigger="open-popover1" cssClass="width-80">
+              <ng-template>
+                <ion-datetime
+                  presentation="date"
+                  [(ngModel)]="dateExample"
+                  size="cover"
+                ></ion-datetime>
+              </ng-template>
+            </ion-popover>
+          </ion-list>
+          <span style="margin-left: 20px;">End trip</span>
+          <ion-list class="date-picker">
+            <ion-item>
+              <ion-label>Select Date</ion-label>
+              <ion-note slot="end" id="open-popover2">{{endDete | date}}</ion-note>
+            </ion-item>
+            <ion-popover trigger="open-popover2" cssClass="width-80">
+              <ng-template>
+                <ion-datetime
+                  presentation="date"
+                  [(ngModel)]="endDete"
+                  size="cover"
+                ></ion-datetime>
+              </ng-template>
+            </ion-popover>
+          </ion-list>
+         
+  <ion-button (click)="backtoHome()" class="find-car">Find car</ion-button>
+
   </ion-header>
-  <ion-button (click)="backtoHome()" color="primary">Back</ion-button>
+  <div class="horizontal-scroll">
+    <div class="card">
+      <div class="card-header">AUDI<span class="span-text" style="color: green;">$70 | <small style="color: rgb(0, 0, 0); margin-right: 2px;">day</small></span></div>
+      <div class="card-content">
+        <span class="model-num">QR7 Sport</span>
+        <p style="height: 2px; color: black; margin-top: 5px;">&#9906;  <span>Cario</span></p>
+        <img src="/assets/audi1.jpg" >
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">BMW<span class="span-text" style="color: green;">$60 | <small style="color: rgb(0, 0, 0); margin-right: 2px;">day</small></span></div>
+      <div class="card-content">  <span class="model-num">BMW i8</span>
+        <p style="height: 2px; color: black; margin-top: 5px;">&#9906;  <span>Cario</span></p>
+        <img src="/assets/BMW2.jpeg" ></div>
+    </div>
+    <div class="card">
+      <div class="card-header">VOLVO<span class="span-text" style="color: green;">$50 | <small style="color: rgb(0, 0, 0); margin-right: 2px;">day</small></span></div>
+      <div class="card-content">  <span class="model-num">XC60</span>
+        <p style="height: 2px; color: black; margin-top: 5px;">&#9906;  <span>Cario</span></p>
+        <img src="/assets/volvo3.jpg" ></div>
+    </div>
+    <div class="card">
+      <div class="card-header">FORD<span class="span-text" style="color: green;">$40 | <small style="color: rgb(0, 0, 0); margin-right: 2px;">day</small></span></div>
+      <div class="card-content">  <span class="model-num">FORD Endover</span>
+        <p style="height: 2px; color: black; margin-top: 5px;">&#9906;  <span>Cario</span></p>
+        <img src="/assets/ford4.jpg"></div>
+    </div>
+    
+  </div>
+
 </ion-content>

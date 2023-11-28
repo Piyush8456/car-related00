@@ -1,5 +1,134 @@
-ion-header{
-    height: 30%;
-    background-color: antiquewhite;
-
+*{
+    padding: 0;
+    margin: 0;
 }
+ion-header{
+    height: 500px;
+    margin-top: 0%;
+    background: url('/assets/faraari.jpg');
+    background-size: cover;
+    padding-bottom: 100px;
+    --opacity: 1 !important;
+}
+ion-content{
+    --background:#ffffff;
+}
+ion-toolbar{
+    --background: transparent;
+}
+h3{
+    margin-left: 30px;
+    color: black;
+    margin-top: 20px;
+    font-weight: bolder;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.span-text{
+    color: black;
+    padding-top: 20px;
+    margin-left: 30px
+}
+ion-select {
+    --background: transparent;
+    --placeholder-color: #ffffff; /* Set the color for the placeholder text */
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    margin: 10px 20px 20px 20px;
+    width: 340px;
+    border-radius: 10px;
+   
+    
+  }
+  
+  ion-select::part(overlay) {
+    background: rgba(0, 0, 0, 0.9); 
+  }
+  ion-select::part(placeholder) {
+    color: black; 
+    margin-left: 20PX;
+  }
+  .find-car{
+    --border-style: solid;
+    --background-color: #004d40;
+    margin-left: 40px; 
+    margin-top: 110px;
+    border: o solid;
+    width: 300px;
+    border-radius: 0;
+  }
+  #scroll-list{
+    height: 200px;
+}
+.horizontal-scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .card {
+    margin-top: 60px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: black;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+  img{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 80px;
+    height: 50px;
+  }
+  .model-num{
+    color: black;
+    margin-top: 0;
+  }
+  ion-select-option{
+    color: #ffffff;
+  }
+  ion-select::part(placeholder) {
+    color: #ffffff;
+  }
+  .ion-text-end{
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 70px;
+  }
+  ion-modal {
+    --background-color:var(--background)
+    &.bottom-end {
+      align-items: center;
+      --height: auto;
+      .ion-page {
+        display: block;
+        contain: content;
+      }
+    }
+  }
+  .date-picker{
+    border: 2px solid #ccc;
+    margin: 10px 20px 10px 20px;
+    border-radius: 10px;
+    height: 60px;
+    align-content: center;
+  }
+  ion-popover {
+    &.width-80 {
+      --width: 80%;
+    }
+  }
